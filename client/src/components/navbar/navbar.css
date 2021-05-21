@@ -1,0 +1,43 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: black;
+    width: 100%;
+    height: 90px;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+}
+
+p {
+    font-size: 150px;
+}
+
+.name {
+    padding-left: 40px;
+    font-size: 3rem;
+}
+
+.reflection {
+    background: linear-gradient(black, rgb(255,255,255,0.3));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    left: -120px;
+    z-index: -1;
+}
+
+/* FOR ECOMM */
+
+/* span {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    animation: anim 2.1s linear;
+}
+
+@keyframes anim {
+    0%{color: #141414; text-shadow: none;}
+} */
