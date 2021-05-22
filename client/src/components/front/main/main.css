@@ -1,0 +1,63 @@
+.main{
+    /* width: 95%; */
+    /* height: 400px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+.main .main-pic {
+    height: 280px;
+    width: 280px;
+    /* shape-outside: url('./main.svg'); */
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 800px) {
+    .main .main-pic {
+        height: 220px;
+        width: 200px;
+        float: right;
+        shape-outside: url('./main.svg');
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    .main .main-pic {
+        height: 120px;
+        width: 200px;
+        float: right;
+        shape-outside: url('./main.svg');
+    }
+}
+
+.main p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+.main span {
+    color:rgb(58, 58, 58);
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    animation: anim 2.1s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes anim {
+    0%{color: #141414; text-shadow: none;}
+    100%{color: #f3ff08; text-shadow: 0 0 9px #ffff17;}
+} 
