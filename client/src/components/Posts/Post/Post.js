@@ -1,7 +1,12 @@
 import React from 'react';
 import moment from 'moment';
+import { useDispatch } from 'react-redux';
+import { deletePost } from "../../../actions/posts";
 
 const Post = ({ post, setCurrentId }) => {
+    
+    const dispatch = useDispatch();
+
     return (
         <div>
             <div>
@@ -21,9 +26,9 @@ const Post = ({ post, setCurrentId }) => {
             <h3>{post.title}</h3>
             <h5>{post.message}</h5>
             <button onClick={() => {}}>Like {post.likeCount} </button>
-            <button onClick={() => {}}>Delete</button><hr />
+            <button onClick={() => dispatch(deletePost(post._id))}>Delete</button><hr />
         </div>
     )
 }
 
-export default Post
+export default Post;
