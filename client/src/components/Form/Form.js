@@ -3,6 +3,8 @@ import FileBase from 'react-file-base64';
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
 import { createPost, updatePost } from "../../actions/posts";
+import { FormLayout, FormTitle, FormInput } from "./styles";
+import { ButtonElement } from "../PageStyles/Button";
 
 const Form = ({ currentId, setCurrentId }) => {
 
@@ -32,10 +34,10 @@ const Form = ({ currentId, setCurrentId }) => {
       };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <h6>{currentId ? 'Editing' : 'Creating' } a post</h6>
-                <input type="text"
+        <FormLayout onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}> */}
+                <FormTitle>{currentId ? 'Edit the' : 'Create' } post</FormTitle>
+                <FormInput type="text"
                     name="creator"
                     placeholder="Creator"
                     label="creator"
@@ -43,7 +45,7 @@ const Form = ({ currentId, setCurrentId }) => {
                     onChange={(e) => setPostData({ ...postData, creator: e.target.value })}
                 />
 
-                <input type="text"
+                <FormInput type="text"
                     name="title"
                     placeholder="Title"
                     label="title"
@@ -51,7 +53,7 @@ const Form = ({ currentId, setCurrentId }) => {
                     onChange={(e) => setPostData({ ...postData, title: e.target.value })}
                 />
 
-                <input type="text"
+                <FormInput type="text"
                     name="message"
                     placeholder="Message"
                     label="message"
@@ -59,7 +61,7 @@ const Form = ({ currentId, setCurrentId }) => {
                     onChange={(e) => setPostData({ ...postData, message: e.target.value })}
                 />
 
-                <input type="text"
+                <FormInput type="text"
                     name="tags"
                     placeholder="tags"
                     label="Tags"
@@ -72,10 +74,9 @@ const Form = ({ currentId, setCurrentId }) => {
                 onDone={({base64}) => setPostData({ ...postData, selectedFile: base64})} 
                 />
 
-                <button type="submit">Submit</button>
-
-            </form>
-        </div>
+                <ButtonElement type="submit">Submit</ButtonElement>
+            {/* </form> */}
+        </FormLayout>
     )
 }
 

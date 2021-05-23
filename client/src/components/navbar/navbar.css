@@ -10,6 +10,7 @@
     align-items: center;
     overflow: hidden;
     border-bottom: 1px solid white;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
@@ -17,8 +18,11 @@ p {
 }
 
 .name {
-    padding-left: 40px;
+    padding-left: 18px;
     font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .reflection {
@@ -29,15 +33,3 @@ p {
     left: -120px;
     z-index: -1;
 }
-
-/* FOR ECOMM */
-
-/* span {
-    font-size: 3rem;
-    letter-spacing: 1rem;
-    animation: anim 2.1s linear;
-}
-
-@keyframes anim {
-    0%{color: #141414; text-shadow: none;}
-} */

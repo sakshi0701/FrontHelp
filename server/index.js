@@ -23,7 +23,6 @@ mongoose.connect('mongodb://localhost/base', {useNewUrlParser: true,useUnifiedTo
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  // we're connected!
   console.log(chalk.black.bgGrey.italic("We are connected!"));
 });
 

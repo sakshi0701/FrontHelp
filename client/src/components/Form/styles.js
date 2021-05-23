@@ -1,24 +1,28 @@
-// import { makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 
-// export default makeStyles((theme) => ({
-//   root: {
-//     '& .MuiTextField-root': {
-//       margin: theme.spacing(1),
-//     },
-//   },
-//   paper: {
-//     padding: theme.spacing(2),
-//   },
-//   form: {
-//     display: 'flex',
-//     flexWrap: 'wrap',
-//     justifyContent: 'center',
-//   },
-//   fileInput: {
-//     width: '97%',
-//     margin: '10px 0',
-//   },
-//   buttonSubmit: {
-//     marginBottom: 10,
-//   },
-// }));
+export const FormLayout = styled.form`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    height: 70vh;
+    width: 55vh;
+    border-radius: 9px;
+`;
+
+export const FormTitle = styled.h2`
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Farro', sans-serif;
+`;
+
+export const FormInput = styled.input`
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    font-size: 1rem;
+    font-family: 'Farro', sans-serif;
+`;
