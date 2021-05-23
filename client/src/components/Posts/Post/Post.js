@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
-import { deletePost } from "../../../actions/posts";
+import { deletePost, likePost } from "../../../actions/posts";
 
 const Post = ({ post, setCurrentId }) => {
     
@@ -10,7 +10,7 @@ const Post = ({ post, setCurrentId }) => {
     return (
         <div>
             <div>
-                image={post.selectedFile}
+                {post.selectedFile}
                 title={post.title}
             </div>
             <div>
@@ -25,7 +25,7 @@ const Post = ({ post, setCurrentId }) => {
             </div>
             <h3>{post.title}</h3>
             <h5>{post.message}</h5>
-            <button onClick={() => {}}>Like {post.likeCount} </button>
+            <button onClick={() => dispatch(likePost(post._id))}>Like &nbsp;{post.likeCount} </button>
             <button onClick={() => dispatch(deletePost(post._id))}>Delete</button><hr />
         </div>
     )
