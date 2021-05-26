@@ -25,4 +25,5 @@ export const FormInput = styled.input`
     border-bottom: 0.5px solid grey;
     font-size: 1rem;
     font-family: 'Farro', sans-serif;
+    width: 90%;
 `;

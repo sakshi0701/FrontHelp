@@ -5,8 +5,12 @@ import { GoogleLogin } from "react-google-login";
 import { useHistory } from 'react-router-dom';
 import { AUTH } from "../../constants/actionTypes";
 import { signin, signup } from "../../actions/auth";
-import { FormLayout } from '../Form/styles';
-import { ButtonElement } from "../PageStyles/Button";
+import Main from '../front/main/Main';
+import image from '../front/main/main.svg';
+import { Cards } from '../PageStyles/Cards';
+import Services from '../front/services/Services';
+import { FormLayout, FormTitle } from '../PageStyles/Forms';
+import { ButtonElement, AuthOption } from "../PageStyles/Button";
 import { FaGoogle } from "react-icons/fa";
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
@@ -50,47 +54,52 @@ const Auth = () => {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-    return (
-        <div>
-            <FormLayout>
-                <h3>
-                    { isSignup ? 'Sign Up' : 'Log In' }
-                </h3>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        { isSignup && (
-                            <>
-                                <Input type="text" name="firstName" placeholder="First Name" label="First Name" handleChange={handleChange} autoFocus />
-                                <Input type="text" name="lastName" placeholder="Last Name" label="Last Name" handleChange={handleChange} />
-                            </>
-                        )}
-                        <Input type="email" name="email" placeholder="Email" label="Email Address" handleChange={handleChange} />
-                        <Input type="password" name="password" placeholder="Password" label="Password" handleChange={handleChange} />
-                        { isSignup && <Input type="password" name="confirmPassword" placeholder="Confirm Password" label="Confirm Password" handleChange={handleChange} />}
-                    </div>
-                    <button type="submit">
-                        { isSignup ? 'Sign Up' : 'Log In'}
-                    </button>
-                    <GoogleLogin
-                        clientId="413566942607-1is7bd9pptvt5tge954i481egmiqpgje.apps.googleusercontent.com"
-                        render={(renderProps) => (
-                            <button onClick={renderProps.onClick} disabled={renderProps.disabled} variant="contained">
-                                <FaGoogle /> Sign In with Google
-                            </button>
-                        )}
-                        onSuccess={googleSuccess}
-                        onFailure={googleError}
-                        cookiePolicy="single_host_origin"
-                    />
-                    <div>
-                        <button onClick={switchMode}>
-                            { isSignup ? 'Already have an account? Sign In' : "Don't have an account? SignUp" }
-                        </button>
-                    </div>
-                </form>
-            </FormLayout>
-        </div>
-    )
+  return (
+    <Cards style={{height:"auto"}} >
+      <Main />
+      <Services />
+      <div id="card" style={{ display: "flex", justifyContent: "center", margin: "10px" }}>
+        <FormLayout style={{ width: "80vh", height: "auto", padding:"10px" }}>
+          <img src={image} alt="img" className="main-pic" />
+          <FormTitle>
+            {isSignup ? 'Sign Up' : 'Log In'}
+          </FormTitle>
+          <form onSubmit={handleSubmit}>
+            <div>
+              {isSignup && (
+                <>
+                  <Input type="text" name="firstName" placeholder="First Name" label="First Name" handleChange={handleChange} autoFocus />
+                  <Input type="text" name="lastName" placeholder="Last Name" label="Last Name" handleChange={handleChange} />
+                </>
+              )}
+              <Input type="email" name="email" placeholder="Email" label="Email Address" handleChange={handleChange} />
+              <Input type="password" name="password" placeholder="Password" label="Password" handleChange={handleChange} />
+              {isSignup && <Input type="password" name="confirmPassword" placeholder="Confirm Password" label="Confirm Password" handleChange={handleChange} />}
+            </div>
+            <ButtonElement type="submit">
+              {isSignup ? 'Sign Up' : 'Log In'}
+            </ButtonElement>
+            <GoogleLogin
+              clientId="413566942607-1is7bd9pptvt5tge954i481egmiqpgje.apps.googleusercontent.com"
+              render={(renderProps) => (
+                <ButtonElement onClick={renderProps.onClick} disabled={renderProps.disabled} variant="contained">
+                  <FaGoogle /> Sign In with Google
+                </ButtonElement>
+              )}
+              onSuccess={googleSuccess}
+              onFailure={googleError}
+              cookiePolicy="single_host_origin"
+            />
+            <div>
+              <AuthOption onClick={switchMode}>
+                {isSignup ? 'Already have an account? Sign In' : "Don't have an account? SignUp"}
+              </AuthOption>
+            </div>
+          </form>
+        </FormLayout>
+      </div>
+    </Cards>
+  )
 }
 
 export default Auth;

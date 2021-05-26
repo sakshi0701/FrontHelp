@@ -45,7 +45,6 @@ const Post = ({ post, setCurrentId }) => {
                     <MdDelete />
                 </ButtonElement>
             )}
-            {/* <ButtonElement style={{ background: "orange", width: "30%" }} onClick={() => dispatch(deletePost(post._id))}><MdDelete style={{ color: "black" }} /></ButtonElement><hr /> */}
         </CardLayout>
     )
 }

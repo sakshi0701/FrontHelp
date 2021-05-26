@@ -1,9 +1,10 @@
 import React from 'react';
+import { FormInput } from '../PageStyles/Forms';
 
 const Input = ({ type, name, placeholder, label, handleChange }) => {
     return (
         <div>
-            <input 
+            <FormInput 
             type={type}
             name={name}
             placeholder={placeholder}

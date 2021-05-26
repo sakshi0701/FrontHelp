@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 import { createPost, updatePost } from "../../actions/posts";
-import { FormLayout, FormTitle, FormInput } from "./styles";
+import { FormLayout, FormTitle, FormInput } from "../PageStyles/Forms";
 import { ButtonElement } from "../PageStyles/Button";
 
 const Form = ({ currentId, setCurrentId }) => {
@@ -36,9 +36,9 @@ const Form = ({ currentId, setCurrentId }) => {
   if (!user?.result?.name) {
     return (
       <div>
-        <h3>
-          Please Sign In to create your own memories and like other's memories.
-        </h3>
+        <FormTitle style={{color:"#fff"}}>
+          Please Sign In to post your experiences and records.
+        </FormTitle>
       </div>
     );
   }
@@ -78,7 +78,7 @@ const Form = ({ currentId, setCurrentId }) => {
       />
       </div>
 
-      <button type="submit">Submit</button>
+      <ButtonElement type="submit">Submit</ButtonElement>
       {/* </form> */}
     </FormLayout>
   )

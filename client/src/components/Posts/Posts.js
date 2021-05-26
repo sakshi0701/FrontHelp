@@ -2,12 +2,15 @@ import React from 'react';
 import Post from './Post/Post';
 import { useSelector } from "react-redux";
 import { Cards } from "../../components/PageStyles/Cards";
+import { Heading } from '../PageStyles/Heading';
 
 const Posts = ({ setCurrentId }) => {
     const posts = useSelector((state) => state.posts);
     
     return (
-        <Cards style={{ margin: "9px", maxWidth: "90vh" }}>
+        <>
+        <Heading>Your Posts</Heading>
+        <Cards>
             <div>
                 {posts.map((post) => (
                     <div key={post._id}>
@@ -16,6 +19,7 @@ const Posts = ({ setCurrentId }) => {
                 ))}
             </div>
         </Cards>
+        </>
     );
 };
 

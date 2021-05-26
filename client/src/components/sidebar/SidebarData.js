@@ -51,12 +51,6 @@ export const SidebarData = [
     },
 
     {
-        title: 'Notes',
-        path: '/notes',
-        icon: <CgIcons.CgNotes />,
-    },
-
-    {
         title: 'Quiz',
         path: '/quiz',
         icon: <FaIcons.FaQuestion />,

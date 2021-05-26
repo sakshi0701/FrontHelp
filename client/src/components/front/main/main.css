@@ -1,25 +1,10 @@
-.main{
-    /* width: 95%; */
-    /* height: 400px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    overflow: hidden;
-    border: 2px solid red;
-}
-
-.main .main-pic {
-    height: 280px;
-    width: 280px;
-    /* shape-outside: url('./main.svg'); */
-    border: 2px solid red;
+.main-pic {
+    height: 250px;
+    width: 250px;
 }
 
 @media screen and (max-width: 800px) {
-    .main .main-pic {
+    .main-pic {
         height: 220px;
         width: 200px;
         float: right;
@@ -29,7 +14,7 @@
 
 
 @media screen and (max-width: 280px) {
-    .main .main-pic {
+    .main-pic {
         height: 120px;
         width: 200px;
         float: right;
@@ -37,22 +22,12 @@
     }
 }
 
-.main p {
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid red;
-}
-
 .main span {
+    text-align: center;
+    width: 100%;
     color:rgb(58, 58, 58);
     font-size: 3rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.7rem;
     animation: anim 2.1s linear infinite;
     animation-delay: 0.1s;
 }

@@ -20,3 +20,16 @@ export const ButtonElement = styled.button`
         transition: 0.5s;
     }
 `;
+
+export const AuthOption = styled.button`
+    border: none;
+    background: transparent;
+    font-size: 0.9rem;
+    font-style: italic;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+`;

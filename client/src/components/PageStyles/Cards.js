@@ -6,9 +6,9 @@ export const Cards = styled.div`
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 40px 40px 40px 90px;
-    border: 2px solid green;
-    width: 100%;
+    margin: 35px;
+    // border: 2px solid green;
+    width: 90%;
     padding: 20px;
 `;
 
