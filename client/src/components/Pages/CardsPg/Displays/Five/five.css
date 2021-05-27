@@ -1,0 +1,88 @@
+.five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 450px;
+  color: black
+  }
+
+.five .card {
+    background-color: #fff;
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    border: 3px solid #22D2A0;
+    box-shadow: 10px -10px 0 -3px #fff, 10px -10px #1FC11B,
+          20px -20px 0 -3px #fff, 20px -20px #FFD913,
+          30px -30px 0 -3px #fff, 30px -30px #FF9C55,
+          40px -40px 0 -3px #fff, 40px -40px #FF5555;
+  }
+  
+  .five .card:hover {
+    animation: shadow-wave 1s ease infinite;
+  }
+  
+  
+  @keyframes shadow-wave {
+    0% {
+      border: 3px solid #22D2A0;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #1FC11B,
+        20px -20px 0 -3px #fff, 20px -20px #FFD913,
+        30px -30px 0 -3px #fff, 30px -30px #FF9C55,
+        40px -40px 0 -3px #fff, 40px -40px #FF5555;
+    }
+    20% {
+      border: 3px solid #FF5555;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #22D2A0,
+        20px -20px 0 -3px #fff, 20px -20px #1FC11B,
+        30px -30px 0 -3px #fff, 30px -30px #FFD913,
+        40px -40px 0 -3px #fff, 40px -40px #FF9C55;
+    }
+    40% {
+      border: 3px solid #FF9C55;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #FF5555,
+        20px -20px 0 -3px #fff, 20px -20px #22D2A0,
+        30px -30px 0 -3px #fff, 30px -30px #1FC11B,
+        40px -40px 0 -3px #fff, 40px -40px #FFD913;
+    }
+    60% {
+      border: 3px solid #FFD913;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #FF9C55,
+        20px -20px 0 -3px #fff, 20px -20px #FF5555,
+        30px -30px 0 -3px #fff, 30px -30px #22D2A0,
+        40px -40px 0 -3px #fff, 40px -40px #1FC11B;
+    }
+    80% {
+      border: 3px solid #1FC11B;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #FFD913,
+        20px -20px 0 -3px #fff, 20px -20px #FF9C55,
+        30px -30px 0 -3px #fff, 30px -30px #FF5555,
+        40px -40px 0 -3px #fff, 40px -40px #22D2A0;
+    }
+    100% {
+      border: 3px solid #22D2A0;
+      box-shadow: 10px -10px 0 -3px #fff, 10px -10px #1FC11B,
+        20px -20px 0 -3px #fff, 20px -20px #FFD913,
+        30px -30px 0 -3px #fff, 30px -30px #FF9C55,
+        40px -40px 0 -3px #fff, 40px -40px #FF5555;
+    }
+    
+  }
+  
+  .five .card p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  
+  .five .card h2 {
+    font-size: 14px;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+  }
+  

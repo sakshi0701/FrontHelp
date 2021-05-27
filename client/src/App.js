@@ -8,7 +8,7 @@ import Subnav from './components/navbar/Subnav';
 import BtnMain from './components/Pages/ButtonsPg/BtnMain';
 import CardsMain from './components/Pages/CardsPg/CardsMain';
 import SpinMain from './components/Pages/Spinners/SpinMain';
-import FormMain from './components/Pages/Forms/FormMain';
+import BadgeMain from './components/Pages/Badges/BadgeMain';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             <Route path="/components/buttons" exact component={BtnMain} />
             <Route path="/components/cards" exact component={CardsMain} />
             <Route path="/components/spinners" exact component={SpinMain} />
-            <Route path="/components/forms" exact component={FormMain} />
+            <Route path="/components/badges" exact component={BadgeMain} />
           </Switch>
         </div>
         <Footer />

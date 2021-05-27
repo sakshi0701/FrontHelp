@@ -3,33 +3,40 @@ import { ButtonElement } from '../../PageStyles/Button';
 import { CardLayout, Cards } from '../../PageStyles/Cards';
 import { Heading } from '../../PageStyles/Heading';
 
+import One from './Displays/One/One';
+import Two from './Displays/Two/Two';
+import Three from './Displays/Three/Three';
+import Four from './Displays/Four/Four';
+import Five from './Displays/Five/Five';
+import Six from './Displays/Six/Six';
+
 const SpinMain = () => {
     return (
         <Cards>
             <Heading>Spinners</Heading>
             <CardLayout>
-                <div>Spinners One</div>
-                <ButtonElement>Code</ButtonElement>
+                <One />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/PopKNaQ" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
             <CardLayout>
-                <div>Image</div>
-                <ButtonElement>Code</ButtonElement>
+                <Two />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/BaWdKPV" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
             <CardLayout>
-                <div>Image</div>
-                <ButtonElement>Code</ButtonElement>
+                <Three />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/XWMadxJ" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
             <CardLayout>
-                <div>Image</div>
-                <ButtonElement>Code</ButtonElement>
+                <Four />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/abJyNPN" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
             <CardLayout>
-                <div>Image</div>
-                <ButtonElement>Code</ButtonElement>
+                <Five />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/YzZxqMr" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
             <CardLayout>
-                <div>Image</div>
-                <ButtonElement>Code</ButtonElement>
+                <Six />
+                <ButtonElement><a href="https://codepen.io/hello_SD/pen/LYWjNwy" target="_blank" style={{ textDecoration: "none", color: "white" }}>Code</a></ButtonElement>
             </CardLayout>
         </Cards>
     )

@@ -1,0 +1,87 @@
+.bdg-two main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .bdg-two .badge-icon, 
+  .bdg-two .badge-text {
+    padding:1.5rem;
+    float:left;
+    -webkit-box-flex:1;
+    flex:1
+  }
+  
+  .bdg-two .badge{
+    display:flex;
+    color: #f4f4f4;
+    min-width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(15, 15, 15);
+  }
+  
+  .bdg-two .badge-icon{
+      background: url('https://upload.wikimedia.org/wikipedia/commons/9/93/European_stars.svg') #214fe0 no-repeat center center;
+    background-size: contain;
+    max-width: calc( 250px / 5);
+  }
+  
+  .bdg-two .badge-text{
+    font: normal small-caps normal 16px/1.5 Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+  }
+  
+  .bdg-two .badge[data-color=""] .bdg-two .badge-text,
+  .bdg-two .badge[data-color="default"] .bdg-two .badge-text{
+      color: #f4f4f4;
+      background-color: #214fe0;
+  }
+  .bdg-two .badge[data-color="light"] .bdg-two .badge-text{
+      color: #1d1f20;
+      background-color: #f4f4f4;
+  }
+  .bdg-two .badge[data-color="dark"] .bdg-two .badge-text{
+      color: #f4f4f4;
+      background-color: #1d1f20;
+  }
+  
+  .bdg-two .lock {
+    display:block;
+    width: 30px;
+    height: calc(30px * 0.75);
+    top: 50%; left:50%;
+    transform: translate(-50%,-50%);
+    border: 2.5px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .bdg-two .lock:after {
+    content: "";
+    display: block;
+    background: #fff;
+    width: 2.5px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    transition : all 0.1s ease-in-out;
+  }
+  
+  .bdg-two .lock:before {
+    content: "";
+    display: block;
+    width: calc(30px / 2);
+    height: calc(30px / 3);
+    position: absolute;
+    bottom: 100%; left: 50%;
+    transform: translateX(-50%);
+    border: 2.5px solid #fff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: 0;
+  }
+  

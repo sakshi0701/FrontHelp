@@ -1,0 +1,111 @@
+.four 
+{
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.four 
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.four h5
+{
+  font-size:1.4em;
+  font-weight:700;
+}
+
+.four p
+{
+  font-size:12px;
+}
+
+.four .center
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four .property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  color: black;
+}
+
+.four .property-image
+{
+  height:6em;
+  width:14em;
+  position: absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.four .property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+.four .property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.four .property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.four .property-card:hover .property-image
+{
+  height:18em;
+}
+
+.four .property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.four .property-card:hover .property-social-icons:hover
+{
+  background-color:red;
+  cursor:pointer;
+}

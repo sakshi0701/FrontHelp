@@ -1,0 +1,17 @@
+.bdg-three .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bdg-three .badge {
+      display: inline-block;
+      min-width: .5rem;
+      padding: 2rem 3rem;
+      border-radius: 50%;
+      font-size: 75px;
+      text-align: center;
+      background: #1779ba;
+      color: #fefefe;
+      border: 5px solid cyan;
+  }

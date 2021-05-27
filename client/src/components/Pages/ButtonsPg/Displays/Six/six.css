@@ -1,0 +1,41 @@
+.btnsix button {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #92DE34;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #025600;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 7px #92DE34 inset;
+  }
+  
+  .btnsix button:hover {
+    background-image: linear-gradient(
+      145deg,
+      transparent 10%,
+      #69BC22 10% 20%,
+      transparent 20% 30%,
+      #69BC22 30% 40%,
+      transparent 40% 50%,
+      #69BC22 50% 60%,
+      transparent 60% 70%,
+      #69BC22 70% 80%,
+      transparent 80% 90%,
+      #69BC22 90% 100%
+    );
+    animation: background 3s linear infinite;
+  }
+  
+  @keyframes background {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 400px 0;
+    }
+  }

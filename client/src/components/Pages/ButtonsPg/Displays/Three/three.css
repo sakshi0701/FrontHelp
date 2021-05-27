@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+.btnthree section.container{
+    /* min-width: 500px; */
+    text-align: center;
+    background: #fff;
+  }
+    
+.btnthree a:hover {
+  border-bottom: 1px solid #111;
+} 
+    
+.btnthree h1 {
+  font-size: 2em; 
+  padding: 20px 0;
+}
+    
+.btnthree p {
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+
+.btnthree button:hover {
+  cursor: pointer
+}
+
+.btnthree button {
+  background: transparent; 
+  outline: none;
+  position: relative;
+  border: 2px solid #111;
+  padding: 15px 50px;
+  overflow: hidden;
+}
+
+.btnthree button:hover:before { 
+  opacity: 1; 
+  transform: translate(0,0);
+}
+    
+.btnthree button:before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+
+.btnthree button:hover div {
+        opacity: 0; 
+        transform: translate(100%,0)}
+      
+.btnthree button div {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }

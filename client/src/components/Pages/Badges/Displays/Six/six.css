@@ -1,0 +1,54 @@
+.bdg-six .center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .bdg-six .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid green;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  .bdg-six .logo {
+    font-size: 140px;
+    line-height: 200px;
+    vertical-align: middle;
+  }
+  
+  .bdg-six .button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: yellow;
+    border-radius: 50px 0px 50px 0px;
+    color: black;
+  }
+  
+  .bdg-six .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: rotate 14s linear infinite;
+    fill: green;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+  }

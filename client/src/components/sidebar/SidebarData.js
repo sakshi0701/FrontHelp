@@ -31,8 +31,8 @@ export const SidebarData = [
                 icon: <FaIcons.FaSpinner />
             },
             {
-                title: "Forms",
-                path: '/components/forms',
+                title: "Badges",
+                path: '/components/badges',
                 icon: <FaIcons.FaWpforms />
             }
         ]

@@ -1,0 +1,57 @@
+ 
+  .a{color: #E7484F}
+  .b{color: #F68B1D}
+  .c{color: #FCED00}
+  .d{color: #009E4F}
+  .e{color: #00AAC3}
+  .f{color:  #732982}
+  
+  
+  .btnfour .container{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .btnfour .text-center {
+    text-align: center;
+  }
+  
+  .btnfour .rainbow{
+    background-color: #343A40;
+    border-radius: 4px; 
+    height: 45px;
+    width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+  
+  .btnfour .rainbow-style:hover{
+     background-image: linear-gradient(
+        to right, 
+        #E7484F,
+        #E7484F 16.65%,
+        #F68B1D 16.65%,
+        #F68B1D 33.3%,
+        #FCED00 33.3%,
+        #FCED00 49.95%,
+        #009E4F 49.95%,
+        #009E4F 66.6%,
+        #00AAC3 66.6%,
+        #00AAC3 83.25%,
+        #732982 83.25%,
+        #732982 100%,
+        #E7484F 100%
+      );
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }

@@ -1,0 +1,54 @@
+.bdg-five .ribbon{
+    font-size:20px;
+    position:relative;
+    display:inline-block;
+    text-align:center;
+  }
+  
+  .bdg-five .text{
+    display:inline-block;
+    padding:0.5em 1em;
+    min-width: 5rem;
+    line-height:1.2em;
+    background: #FFD72A;
+    position:relative;
+  }
+  
+  .bdg-five .ribbon:after, 
+  .bdg-five .ribbon:before,
+  .bdg-five .text:before,
+  .bdg-five .text:after {
+    content:'';
+    position:absolute;
+    border-style:solid;
+  }
+  
+  .bdg-five .ribbon:before{
+    top:0.3em; 
+    left:0.2em;
+    height:100%;
+    border:none;
+    background:#EBECED;
+    z-index:-2;
+  }
+  
+  .bdg-five .text:before{
+    bottom:100%; left:0;
+    border-width: .5em .7em 0 0;
+    border-color: transparent #FC9544 transparent transparent;
+  }
+  
+  .bdg-five .text:after{
+    top:100%; 
+    right:0;
+    border-width: .5em 2em 0 0;
+    border-color: #FC9544 transparent transparent transparent;
+  }
+  
+  .bdg-five .ribbon:after {
+    top:0.5em;right:-2em;
+    border-width: 1.1em 1em 1.1em 3em;
+    border-color: #FECC30 transparent #FECC30 #FECC30;
+    z-index:-1;
+  }
+  
