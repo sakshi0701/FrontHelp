@@ -48,11 +48,5 @@ export const SidebarData = [
         title: 'Save',
         path: '/save',
         icon: <GiIcons.GiSaveArrow />,
-    },
-
-    {
-        title: 'Quiz',
-        path: '/quiz',
-        icon: <FaIcons.FaQuestion />,
     }
 ];
