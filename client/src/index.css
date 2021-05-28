@@ -4,3 +4,17 @@ body {
     max-width: 100%;
     background: #070707;
 }
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(12, 12, 12);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  rgb(70, 70, 70);
+    border-radius: 25px;
+  }
